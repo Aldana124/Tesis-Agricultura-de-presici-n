@@ -1,20 +1,35 @@
-Descripción del Repositorio
-Este repositorio de GitHub está organizado en tres secciones principales, cada una dedicada a un aspecto fundamental del proyecto de detección de enfermedades foliares:
+1. index.html
+Descripción: Archivo principal que define la estructura y el contenido de la interfaz gráfica de usuario.
+Propósito:
+Muestra las lecturas de los sensores en tiempo real (temperatura, humedad, pH, luz, y humedad del suelo).
+Incluye enlaces y secciones visuales para facilitar la interacción del usuario con el sistema.
+Contenido clave:
+Títulos y etiquetas organizadas en un diseño de cuadrícula (grid).
+Elementos HTML con identificadores (id) que se actualizan dinámicamente con las lecturas de los sensores.
+2. style.css
+Descripción: Hoja de estilos que define el diseño visual y la disposición de los elementos en la interfaz.
+Propósito:
+Mejora la experiencia visual de los usuarios, definiendo colores, fuentes y espaciado.
+Estiliza las tarjetas individuales que muestran las lecturas de los sensores.
+Aspectos destacados:
+Estilo limpio y centrado para que la interfaz sea clara y fácil de entender.
+Diseño responsivo utilizando grid-template-columns para ajustar las tarjetas automáticamente a diferentes tamaños de pantalla.
+3. script.js
+Descripción: Archivo JavaScript que controla la lógica de interacción de la interfaz.
+Propósito:
+Establece y gestiona la conexión con el ESP32 mediante WebSocket.
+Solicita lecturas de los sensores y actualiza dinámicamente los valores en la interfaz.
+Características clave:
+Reintento automático de conexión en caso de fallo.
+Conversión de datos JSON enviados por el ESP32 en actualizaciones visibles en la página.
+Funcionamiento General
+Carga de la interfaz:
 
-Programación de la Red Neuronal
-Esta sección contiene todo el código relacionado con el desarrollo, entrenamiento e implementación de la red neuronal para la detección de enfermedades foliares. Aquí se incluyen:
+Cuando un cliente accede al ESP32, el archivo index.html se carga automáticamente desde el sistema de archivos LittleFS.
+Los estilos (style.css) y la funcionalidad (script.js) también son servidos desde el ESP32.
+Comunicación en tiempo real:
 
-Los scripts para el preprocesamiento de imágenes.
-El modelo de red neuronal utilizado (entrenado con TensorFlow.js).
-Los archivos y recursos necesarios para ejecutar el modelo de manera eficiente.
-Programación de las Interfaces Gráficas (UI/UX)
-En esta sección se encuentran los archivos y scripts responsables del diseño e implementación de las interfaces gráficas del proyecto. Estas interfaces están diseñadas para permitir a los usuarios interactuar con el sistema de manera intuitiva y eficiente. Se incluyen:
+La conexión WebSocket permite que los datos de los sensores se actualicen en tiempo real sin necesidad de recargar la página.
+Visualización:
 
-Archivos HTML, CSS y JavaScript para la creación de la interfaz.
-Conexión de las interfaces con la red neuronal y el servidor ESP32.
-Programación del Servidor ESP32
-Esta sección contiene el código necesario para la configuración y programación del microcontrolador ESP32, que actúa como servidor para el sistema. Aquí se incluyen:
-
-El manejo de la comunicación entre el ESP32 y los sensores o dispositivos conectados.
-El envío de datos hacia el servidor o la red neuronal para su procesamiento.
-La recepción de comandos desde las interfaces gráficas para la ejecución de tareas específicas.
+Las lecturas de los sensores se muestran en tarjetas estilizadas, ofreciendo una interfaz clara y organizada para el monitoreo de las condiciones del campo.
