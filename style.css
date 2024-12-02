@@ -1,0 +1,56 @@
+/* Estilo general para el documento HTML */
+html {
+    font-family: Arial, Helvetica, sans-serif; /* Tipografía para todo el documento */
+    display: inline-block; /* Elementos en línea dentro del bloque */
+    text-align: center; /* Centrar contenido */
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-size: 1.8rem; /* Tamaño del texto */
+    color: white; /* Color del texto */
+}
+
+/* Barra de navegación superior */
+.topnav {
+    overflow: hidden; /* Oculta contenido que se desborde */
+    background-color: #0A1128; /* Color de fondo */
+}
+
+/* Estilo general del cuerpo del documento */
+body {
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+/* Contenedor principal del contenido */
+.content {
+    padding: 50px; /* Espaciado interno alrededor del contenido */
+}
+
+/* Diseño de la cuadrícula para las tarjetas */
+.card-grid {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    display: grid; /* Utiliza un sistema de cuadrícula */
+    grid-gap: 2rem; /* Espaciado entre elementos de la cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta columnas automáticamente */
+}
+
+/* Estilo para cada tarjeta individual */
+.card {
+    background-color: white; /* Fondo blanco */
+    box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, 0.5); /* Sombra alrededor de la tarjeta */
+}
+
+/* Títulos dentro de las tarjetas */
+.card-title {
+    font-size: 1.2rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #01080f; /* Color del texto */
+}
+
+/* Lecturas de los sensores en las tarjetas */
+.reading {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: #12a25c; /* Color del texto (verde) */
+}

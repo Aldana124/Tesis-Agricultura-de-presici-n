@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Encabezado del documento -->
+        <title>ESP IOT DASHBOARD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon del proyecto -->
+        <link rel="icon" type="image/png" href="favicon.png">
+        <!-- Enlace a la hoja de estilos -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Barra superior de navegación -->
+        <div class="topnav">
+            <h1>Interfaz de medición de datos del campo</h1>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content">
+            <!-- Contenedor de tarjetas para mostrar los datos -->
+            <div class="card-grid">
+                <!-- Tarjeta para la temperatura -->
+                <div class="card">
+                    <p class="card-title">
+                        <i class="fas fa-thermometer-threequarters" style="color:#529616;"></i> Temperatura
+                    </p>
+                    <p class="reading"><span id="temperature"></span> &deg;C</p>
+                </div>
+
+                <!-- Tarjeta para la humedad ambiental -->
+                <div class="card">
+                    <p class="card-title">Humedad</p>
+                    <p class="reading"><span id="humidity"></span> &percnt;</p>
+                </div>
+
+                <!-- Tarjeta para los niveles de luz (Lux) -->
+                <div class="card">
+                    <p class="card-title">Lux</p>
+                    <p class="reading"><span id="pressure"></span> LUX</p>
+                </div>
+
+                <!-- Tarjeta para la humedad del suelo -->
+                <div class="card">
+                    <p class="card-title">Humedad en suelo</p>
+                    <p class="reading"><span id="soil"></span> &percnt;</p>
+                </div>
+
+                <!-- Tarjeta para el nivel de pH -->
+                <div class="card">
+                    <p class="card-title">pH</p>
+                    <p class="reading"><span id="ph"></span> pH</p>
+                </div>
+
+                <!-- Enlace de retorno a otra sección del sistema -->
+                <div style="text-align:center; margin-top:20px;">
+                    <a href="https://centraldemonitoreo.ngrok.app">Regresar al identificador de enfermedad foliar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enlace al archivo JavaScript que actualiza los valores dinámicamente -->
+        <script src="script.js"></script>
+    </body>
+</html>
