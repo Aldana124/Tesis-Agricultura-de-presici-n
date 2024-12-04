@@ -1,20 +1,15 @@
-Descripción del Repositorio
-Este repositorio de GitHub está organizado en tres secciones principales, cada una dedicada a un aspecto fundamental del proyecto de detección de enfermedades foliares:
+Descripción General
+Esta carpeta contiene todos los archivos necesarios para la interfaz de monitoreo del proyecto, incluyendo el código principal, los modelos para predicción, y las imágenes utilizadas para la estética de la aplicación.
 
-Programación de la Red Neuronal
-Esta sección contiene todo el código relacionado con el desarrollo, entrenamiento e implementación de la red neuronal para la detección de enfermedades foliares. Aquí se incluyen:
+Archivos Incluidos:
+Archivo Mango_Minimalista.png
+Descripción: Imagen utilizada como ícono o logotipo en la interfaz.
+Propósito: Mejora la estética de la aplicación y proporciona un elemento visual representativo del proyecto.
+Archivo model.json
 
-Los scripts para el preprocesamiento de imágenes.
-El modelo de red neuronal utilizado (entrenado con TensorFlow.js).
-Los archivos y recursos necesarios para ejecutar el modelo de manera eficiente.
-Programación de las Interfaces Gráficas (UI/UX)
-En esta sección se encuentran los archivos y scripts responsables del diseño e implementación de las interfaces gráficas del proyecto. Estas interfaces están diseñadas para permitir a los usuarios interactuar con el sistema de manera intuitiva y eficiente. Se incluyen:
+Descripción: Modelo de predicción de enfermedades foliares en formato JSON.
+Propósito: Es utilizado por TensorFlow.js en la interfaz para realizar predicciones en tiempo real basadas en imágenes capturadas.
+Otros archivos gráficos (si aplica), si se desea obtener los archivos bin y el modelo actualizado se debe de  correr todo el codigo del modelo de interfaz de diagnostico foliar
 
-Archivos HTML, CSS y JavaScript para la creación de la interfaz.
-Conexión de las interfaces con la red neuronal y el servidor ESP32.
-Programación del Servidor ESP32
-Esta sección contiene el código necesario para la configuración y programación del microcontrolador ESP32, que actúa como servidor para el sistema. Aquí se incluyen:
-
-El manejo de la comunicación entre el ESP32 y los sensores o dispositivos conectados.
-El envío de datos hacia el servidor o la red neuronal para su procesamiento.
-La recepción de comandos desde las interfaces gráficas para la ejecución de tareas específicas.
+Descripción: Imágenes adicionales para la personalización y estética de la interfaz.
+Propósito: Ofrecen un diseño atractivo y una experiencia de usuario mejorada.
